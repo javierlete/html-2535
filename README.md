@@ -12,4 +12,4 @@ Ejemplo publicado: https://javierlete.github.io/html-2535/
 * Chuleta de HTML5 (lite en español): https://i.emezeta.com/weblog/html5-cheatsheet/html5-cheatsheet-emezeta.pdf
 * Chuleta de HTML5 (completa en inglés): https://i.emezeta.com/weblog/html5-cheatsheet/html5-cheatsheet-2019.pdf
 * Chuleta de teclas de Visual Studio Code para Windows: https://go.microsoft.com/fwlink/?linkid=832145
-
+* Validador de HTML del consorcio web: https://validator.w3.org/
