@@ -1,5 +1,7 @@
 # html-2535
 
+Ejemplo publicado: https://javierlete.github.io/html-2535/
+
 ## Referencias
 
 * Libro de XHTML (no es la última versión pero es bueno igualmente): https://uniwebsidad.com/libros/xhtml
