@@ -1,11 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejemplo de HTML</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Ejemplo de HTML</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#parrafos">Párrafos</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#tablas">Tablas</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#formularios">Formularios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="html">
+            <h2>HTML</h2>
+
+            <section id="parrafos">
+                <h3>Párrafos</h3>
+
+                <p><strong>Lorem</strong> ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p>Quam <em>dolores</em> illum sapiente vitae. Perspiciatis, molestiae.</p>
+                <p>Laboriosam <code>cupiditate</code> aliquid aspernatur praesentium exercitationem ad!</p>
+
+                <pre>
+public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("Hola a todos");
+    }
+}
+                </pre>
+            </section>
+
+            <section id="listas">
+                <h3>Listas</h3>
+
+                <ul>
+                    <!-- li*3>{Elemento $} -->
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ul>
+
+                <ol>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3
+                        <ol>
+                            <li>Subelemento 3.1</li>
+                            <li>Subelemento 3.2</li>
+                        </ol>
+                    </li>
+                    <li>Elemento 4</li>
+                </ol>
+
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Hyper Text Markup Language</dd>
+
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+
+                    <dt>JS</dt>
+                    <dd>JavaScript</dd>
+                </dl>
+            </section>
+
+            <section id="tablas">
+                <h3>Tablas</h3>
+
+                <table>
+                    <caption>Tabla de ejemplo</caption>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <!-- tr*5>(th>{$})+(td>{Nombre $})+(td>{Apellidos $}) -->
+                        <tr>
+                            <th>1</th>
+                            <td>Nombre 1</td>
+                            <td>Apellidos 1</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Nombre 2</td>
+                            <td>Apellidos 2</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>Nombre 3</td>
+                            <td>Apellidos 3</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td>Nombre 4</td>
+                            <td>Apellidos 4</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td>Nombre 5</td>
+                            <td>Apellidos 5</td>
+                        </tr>
+                        
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </section>
+
+            <section id="multimedia">
+                <h3>Multimedia</h3>
+            </section>
+
+            <section id="formularios">
+                <h3>Formularios</h3>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a target="_blank" href="https://www.freecodecamp.org">FreeCodeCamp</a></li>
+                <li><a target="_blank" href="https://caniuse.com">Can I Use</a></li>
+                <li><a target="_blank" href="https://html.spec.whatwg.org/multipage/#toc-semantics">Especificación de elementos (etiquetas) de HTML</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <footer>
+        <p>&copy;2023 Javier Lete</p>
+        <p><a href="pie/privacidad.html">Política de privacidad</a></p>
+    </footer>
+
+    <dialog open>
+        <p>Prueba</p>
+    </dialog>
 </body>
+
 </html>
