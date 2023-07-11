@@ -4,6 +4,8 @@ Ejemplo publicado: https://javierlete.github.io/html-2535/
 
 ## Referencias
 
+### HTML
+
 * Libro de XHTML (no es la última versión pero es bueno igualmente): https://uniwebsidad.com/libros/xhtml
 * Libro de HTML5 (ampliación del anterior): http://diveintohtml5.info/
 * Web para ver capacidades de los navegadores: https://caniuse.com/
@@ -14,6 +16,10 @@ Ejemplo publicado: https://javierlete.github.io/html-2535/
 * Chuleta de teclas de Visual Studio Code para Windows: https://go.microsoft.com/fwlink/?linkid=832145
 * Validador de HTML del consorcio web: https://validator.w3.org/
 
+### CSS
+
+* Chuleta Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* Chuleta Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
 ## Juegos
 
 * CSS Dinner: https://flukeout.github.io/
