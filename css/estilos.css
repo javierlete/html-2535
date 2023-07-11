@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Outfit&display=swap');
+
 @font-face {
     font-family: 'Super Space';
     src: url(../fonts/Super\ Space.otf);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 :root {
@@ -9,8 +15,9 @@
     --color-fondo-secundario: #dfdfdf;
     --color-enlace: #0969da;
     --tipo-letra-titulo: Super Space;
-    --tipo-letra-texto: sans-serif;
+    --tipo-letra-texto: 'Outfit', sans-serif;
     --margen: 0.5rem;
+    --sombra: 0rem 0rem 1rem 0.3rem gray;
 }
 
 body {
@@ -19,9 +26,16 @@ body {
     font-family: var(--tipo-letra-texto);
 
     margin: 0;
+
+    font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--tipo-letra-titulo);
 }
 
@@ -35,7 +49,8 @@ a:hover {
     text-decoration: underline;
 }
 
-h1, nav {
+h1,
+nav, footer {
     color: var(--color-fondo);
     background-color: var(--color-tinta);
 
@@ -51,7 +66,7 @@ h1 {
 }
 
 nav ul {
-    
+
     padding-left: 0;
     margin: 0;
 
@@ -62,7 +77,7 @@ nav li {
     padding: var(--margen);
 }
 
-nav a {
+nav a, footer a {
     color: var(--color-fondo);
 }
 
@@ -72,8 +87,8 @@ main {
 
 h2 {
     color: var(--color-fondo);
-    
-    background: rgb(238,174,202);
+
+    background: rgb(238, 174, 202);
     background: radial-gradient(at top left, var(--color-fondo-secundario) 0%, var(--color-tinta) 100%);
 
     text-align: center;
@@ -81,5 +96,153 @@ h2 {
 
     border-radius: var(--margen);
     border: 2px solid white;
-    box-shadow: 0rem 0rem 0.4rem 0rem lightgray; /* calc(-1 * var(--margen)) var(--margen) var(--margen) lightgray; */
+    box-shadow: var(--sombra);
+    /* calc(-1 * var(--margen)) var(--margen) var(--margen) lightgray; */
+}
+
+pre,
+code {
+    background-color: var(--color-fondo-secundario);
+    padding: var(--margen);
+    border-radius: var(--margen);
+
+    font-family: 'Martian Mono', monospace;
+    font-size: 0.75rem;
+
+    overflow: auto;
+}
+
+p {
+    line-height: 1.5;
+}
+
+strong {
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: calc(3*var(--margen));
+}
+
+ol {
+
+    list-style: upper-roman;
+    /* list-style-position: inside; */
+}
+
+ol ol {
+    padding-left: 1rem;
+    list-style: lower-alpha;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: var(--sombra);
+}
+
+caption {
+    box-shadow: var(--sombra);
+    background-color: var(--color-fondo-secundario);
+    padding: var(--margen);
+    font-weight: bold;
+}
+
+thead,
+tfoot {
+    background-color: var(--color-tinta);
+    color: var(--color-fondo);
+}
+
+th:first-of-type {
+    text-align: right;
+}
+
+thead th:not(:first-of-type) {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-fondo-secundario);
+}
+
+td,
+th {
+    border: 1px solid darkgray;
+
+    padding: var(--margen);
+}
+
+#multimedia>*:not(a, h3), #multimedia img {
+    margin: var(--margen) 0;
+
+    border: 1px solid darkgray;
+    border-radius: calc(2* var(--margen));
+    box-shadow: var(--sombra);
+}
+
+#multimedia audio {
+    border-radius: 100vw;
+}
+
+#multimedia>*,
+#multimedia img {
+    width: 100%;
+}
+
+.relacion {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.relacion::after {
+    display: block;
+    content: "";
+}
+
+.relacion iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.relacion.r16x9::after {
+    padding-top: 56.25%;
+}
+
+.relacion.r4x3::after {
+    padding-top: 75%;
+}
+
+.relacion.r1x1::after {
+    padding-top: 100%;
+}
+
+input, button, select, textarea, fieldset {
+    border: 1px solid lightgray;
+    border-radius: var(--margen);
+
+    padding: var(--margen);
+    margin: var(--margen) 0;
+
+    font-family: var(--tipo-letra-texto);
+
+    width: 100%;
+}
+
+button:hover, input[type=submit]:hover {
+    box-shadow: var(--sombra);
+}
+
+dialog {
+    display: none;
 }
