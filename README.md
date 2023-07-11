@@ -17,3 +17,5 @@ Ejemplo publicado: https://javierlete.github.io/html-2535/
 ## Juegos
 
 * CSS Dinner: https://flukeout.github.io/
+* Flexbox Froggy: https://flexboxfroggy.com/#es
+* Grid Garden: https://cssgridgarden.com/#es
