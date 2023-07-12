@@ -51,7 +51,8 @@ a:hover {
 }
 
 h1,
-nav, footer {
+nav,
+footer {
     color: var(--color-fondo);
     background-color: var(--color-tinta);
 
@@ -90,7 +91,8 @@ nav li {
     padding: var(--margen);
 }
 
-nav a, footer a {
+nav a,
+footer a {
     color: var(--color-fondo);
 }
 
@@ -192,7 +194,11 @@ th {
     padding: var(--margen);
 }
 
-#multimedia img, #multimedia audio, #multimedia video, #multimedia iframe, #multimedia .relacion {
+#multimedia img,
+#multimedia audio,
+#multimedia video,
+#multimedia iframe,
+#multimedia .relacion {
     margin: var(--margen) 0;
 
     border-radius: calc(6 * var(--margen));
@@ -244,7 +250,11 @@ th {
     padding-top: 100%;
 }
 
-input, button, select, textarea, fieldset {
+input,
+button,
+select,
+textarea,
+fieldset {
     border: 1px solid lightgray;
     border-radius: var(--margen);
 
@@ -256,7 +266,8 @@ input, button, select, textarea, fieldset {
     width: 100%;
 }
 
-button:hover, input[type=submit]:hover {
+button:hover,
+input[type=submit]:hover {
     box-shadow: var(--sombra);
 }
 
@@ -289,10 +300,83 @@ dialog {
 
 #redes-sociales {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 0;
 }
 
 #redes-sociales li {
     list-style: none;
+}
+
+#spotify iframe {
+    width: 100%;
+    height: 443px;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+
+        justify-content: space-evenly;
+    }
+
+    #html {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2,
+    h3,
+    #tablas,
+    #multimedia,
+    #formularios {
+        width: 100%;
+    }
+
+    #parrafos {
+        width: 75%;
+        padding-right: var(--margen);
+    }
+
+    #listas {
+        width: 25%;
+        padding-left: var(--margen);
+    }
+
+    #formularios {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--margen);
+    }
+
+    form:not(:last-of-type) {
+        width: calc(50% - var(--margen));
+    }
+
+    form:last-of-type {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--margen);
+    }
+
+    form:last-of-type fieldset {
+        width: calc(50% - var(--margen));
+        padding: var(--margen);
+    }
+
+    textarea {
+        height: calc(100% - var(--margen));
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #arriba i {
+        position: static;
+    }
+
+    #redes-sociales>* {
+        padding: var(--margen);
+    }
 }
