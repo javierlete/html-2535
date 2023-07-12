@@ -256,6 +256,10 @@ button:hover, input[type=submit]:hover {
     box-shadow: var(--sombra);
 }
 
+footer {
+    padding-bottom: 2rem;
+}
+
 dialog {
     display: none;
 }
@@ -277,4 +281,14 @@ dialog {
 
     width: 2rem;
     height: 2rem;
+}
+
+#redes-sociales {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+#redes-sociales li {
+    list-style: none;
 }
