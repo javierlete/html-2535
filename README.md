@@ -26,8 +26,10 @@ Ejemplo publicado: https://javierlete.github.io/html-2535/
 * Referencia de CSS 2.1: https://uniwebsidad.com/libros/referencia-css2
 * Especificaciones CSS: https://www.w3.org/Style/CSS/Overview.en.html
 * Conjunto de especificaciones de 2023: https://www.w3.org/TR/css-2023/
+* Position: https://developer.mozilla.org/es/docs/Web/CSS/position
 * Chuleta Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 * Chuleta Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
+
 
 ## Juegos
 

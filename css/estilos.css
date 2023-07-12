@@ -18,6 +18,7 @@
     --tipo-letra-texto: 'Outfit', sans-serif;
     --margen: 0.5rem;
     --sombra: 0rem 0rem 1rem 0.3rem gray;
+    --sombra-negra: 0rem 0rem 1rem 0.3rem black;
 }
 
 body {
@@ -63,6 +64,18 @@ nav, footer {
 
 h1 {
     border-bottom: 1px solid var(--color-fondo);
+}
+
+h3 {
+    position: sticky;
+    top: var(--margen);
+
+    z-index: 1;
+
+    background-color: var(--color-fondo-secundario);
+    border-radius: var(--margen);
+    padding: var(--margen);
+    box-shadow: var(--sombra-negra);
 }
 
 nav ul {
@@ -245,4 +258,23 @@ button:hover, input[type=submit]:hover {
 
 dialog {
     display: none;
+}
+
+#arriba i {
+    position: fixed;
+
+    bottom: var(--margen);
+    right: var(--margen);
+
+    margin: 0;
+    padding: var(--margen);
+    border: 1px solid var(--color-fondo);
+    border-radius: 100vw;
+    box-shadow: var(--sombra-negra);
+
+    z-index: 2;
+    background-color: var(--color-tinta);
+
+    width: 2rem;
+    height: 2rem;
 }
