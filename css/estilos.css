@@ -506,3 +506,10 @@ dialog {
         padding: var(--margen);
     }
 }
+
+@media (min-width: 4096px) {
+    body {
+        max-width: 4100px;
+        margin: auto;
+    }
+}
