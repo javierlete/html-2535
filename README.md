@@ -9,6 +9,7 @@ Ejemplo publicado: https://javierlete.github.io/html-2535/
 * Web para ver capacidades de los navegadores: https://caniuse.com/
 * FreeCodeCamp: https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-1
 * Chuleta de teclas de Visual Studio Code para Windows: https://go.microsoft.com/fwlink/?linkid=832145
+* Video sobre accesibilidad: https://www.youtube.com/watch?v=Iw4vXFDniZs
 
 ### HTML
 
