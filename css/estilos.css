@@ -385,6 +385,7 @@ dialog {
 @media (min-width: 1024px) {
     #html {
         display: grid;
+        align-items: start;
         gap: calc(2*var(--margen));
         grid-template-columns: 2fr 1fr 1fr;
     }
@@ -409,7 +410,8 @@ dialog {
         grid-template-areas:
             "titulo-multimedia titulo-multimedia"
             "musica musica"
-            "imagen pelicula"
+            "pelicula pelicula"
+            "imagen youtube"
             "mapa spotify";
     }
 
@@ -439,5 +441,39 @@ dialog {
 
     #youtube {
         grid-area: youtube;
+    }
+}
+
+@media (min-width: 1440px) {
+    #html {
+        grid-template-columns: 3fr repeat(4, 1fr) 3fr;
+        grid-template-areas:
+            "titulo-html titulo-html titulo-html titulo-html titulo-html titulo-html"
+            "parrafos parrafos listas listas tablas tablas"
+            "multimedia multimedia multimedia formularios formularios formularios";
+    }
+
+    h2 {
+        grid-area: titulo-html;
+    }
+
+    #parrafos {
+        grid-area: parrafos;
+    }
+
+    #listas {
+        grid-area: listas;
+    }
+
+    #tablas {
+        grid-area: tablas;
+    }
+
+    #multimedia {
+        grid-area: multimedia;
+    }
+
+    #formularios {
+        grid-area: formularios;
     }
 }
