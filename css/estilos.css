@@ -367,6 +367,7 @@ dialog {
     textarea {
         height: calc(100% - var(--margen));
     }
+
     footer {
         display: flex;
         justify-content: space-around;
@@ -378,5 +379,65 @@ dialog {
 
     #redes-sociales>* {
         padding: var(--margen);
+    }
+}
+
+@media (min-width: 1024px) {
+    #html {
+        display: grid;
+        gap: calc(2*var(--margen));
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    h2,
+    #multimedia,
+    #formularios {
+        grid-column-end: span 3;
+    }
+
+    #parrafos,
+    #listas {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #multimedia {
+        display: grid;
+        gap: calc(2*var(--margen));
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo-multimedia titulo-multimedia"
+            "musica musica"
+            "imagen pelicula"
+            "mapa spotify";
+    }
+
+    #multimedia h3 {
+        grid-area: titulo-multimedia;
+    }
+
+    #multimedia a {
+        grid-area: imagen;
+    }
+
+    #multimedia audio {
+        grid-area: musica;
+    }
+
+    #multimedia video {
+        grid-area: pelicula;
+    }
+
+    #mapa {
+        grid-area: mapa;
+    }
+
+    #spotify {
+        grid-area: spotify;
+    }
+
+    #youtube {
+        grid-area: youtube;
     }
 }
