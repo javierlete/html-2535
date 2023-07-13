@@ -477,3 +477,32 @@ dialog {
         grid-area: formularios;
     }
 }
+
+@media (min-width: 2560px) {
+    #html {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "titulo-html titulo-html titulo-html"
+            "parrafos multimedia formularios"
+            "listas multimedia formularios"
+            "tablas multimedia formularios"
+            ". multimedia formularios";
+    }
+
+    #multimedia{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "titulo-multimedia titulo-multimedia titulo-multimedia titulo-multimedia titulo-multimedia titulo-multimedia"
+            "musica musica musica musica musica musica"
+            "pelicula pelicula pelicula imagen imagen imagen"
+            "spotify spotify mapa mapa youtube youtube";
+    }
+
+    nav ul, footer {
+        justify-content: center;
+    }
+
+    footer > * {
+        padding: var(--margen);
+    }
+}
