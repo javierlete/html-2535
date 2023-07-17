@@ -4,19 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de HTML</title>
+    <title>Ejemplo de Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+         @media (min-width: 1200px) {
+            .ratio { width: 33.3333% }
+         }
+    </style>
 </head>
 
 <body>
     <header class="text-bg-dark p-2 text-center">
-        <h1 class="display-1">Ejemplo de HTML</h1>
+        <h1 class="display-1">Ejemplo de Bootstrap</h1>
     </header>
     <nav class="navbar bg-dark border-bottom border-bottom-dark navbar-expand-sm sticky-top" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Ejemplo de Bootstrap</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -144,7 +149,7 @@ public class HolaMundo {
             <section id="multimedia">
                 <h3>Multimedia</h3>
 
-                <div class="row">
+                <div class="row align-items-center">
                     <a class="col-lg-6" href="imgs/flores.jpg">
                         <img class="border rounded shadow img-fluid my-3" src="imgs/flores.jpg" alt="Flores">
                     </a>
@@ -152,21 +157,21 @@ public class HolaMundo {
                     <audio class="order-lg-first border rounded-5 shadow w-100 my-3" src="audios/musica.mp3"
                         controls></audio>
 
-                    <video class="col-lg-6 border rounded shadow my-3" src="videos/pelicula.mp4" controls></video>
+                    <video class="col-lg-6 border rounded shadow my-3 p-0" src="videos/pelicula.mp4" controls></video>
 
-                    <div id="mapa" class="col-lg-4 border rounded shadow my-3">
+                    <div id="mapa" class="border rounded shadow my-3 ratio ratio-4x3">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.762082154642!2d-2.916172288838435!3d43.25640787788421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fb46238d865%3A0xb671edfb1120ab06!2sIpartek%20Servicios%20Inform%C3%A1ticos!5e0!3m2!1ses!2ses!4v1688661088299!5m2!1ses!2ses"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div id="spotify" class="col-lg-4 border rounded-4 shadow my-3">
+                    <div id="spotify" class="border rounded-4 shadow my-3 ratio ratio-4x3">
                         <iframe
                             src="https://open.spotify.com/embed/artist/0Wr0oT0aCD6w7O25TPwnoX?utm_source=generator&theme=0"
                             allowfullscreen=""
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                             loading="lazy"></iframe>
                     </div>
-                    <div id="youtube" class="col-lg-4 my-3">
+                    <div id="youtube" class="my-3 ratio ratio-4x3">
                         <iframe class="border rounded shadow" src="https://www.youtube.com/embed/1MeXOufzvMI"
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -271,17 +276,17 @@ public class HolaMundo {
         </nav>
     </aside>
 
-    <footer class="text-bg-dark p-2 text-center">
-        <p>&copy;2023 Javier Lete</p>
-        <p><a class="text-white text-decoration-none" href="pie/privacidad.html">Política de privacidad</a></p>
-        <ul id="redes-sociales" class="list-unstyled d-flex justify-content-around justify-content-md-center gap-3">
+    <footer class="text-bg-dark p-2 text-center d-sm-flex justify-content-sm-between">
+        <p class="flex-grow-1">&copy;2023 Javier Lete</p>
+        <p class="flex-grow-1"><a class="text-white text-decoration-none" href="pie/privacidad.html">Política de privacidad</a></p>
+        <ul id="redes-sociales" class="flex-grow-1 list-unstyled d-flex justify-content-around justify-content-md-center gap-3">
             <li><a class="text-white text-decoration-none" href="#"><i class="bi bi-facebook"></i></a></li>
             <li><a class="text-white text-decoration-none" href="#"><i class="bi bi-twitter"></i></a></li>
             <li><a class="text-white text-decoration-none" href="#"><i class="bi bi-youtube"></i></a></li>
             <li><a class="text-white text-decoration-none" href="#"><i class="bi bi-tiktok"></i></a></li>
             <li><a class="text-white text-decoration-none" href="#"><i class="bi bi-instagram"></i></a></li>
         </ul>
-        <p id="arriba">
+        <p class="d-none" id="arriba">
             <a href="#">
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
