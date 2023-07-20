@@ -42,21 +42,26 @@
     <nav class="navbar bg-dark border-bottom border-bottom-dark navbar-expand-md sticky-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Ejemplo de Bootstrap</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#parrafos">Párrafos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#listas">Listas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tablas">Tablas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#multimedia">Multimedia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#formularios">Formularios</a></li>
-                </ul>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="#parrafos">Párrafos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#listas">Listas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tablas">Tablas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#multimedia">Multimedia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#formularios">Formularios</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
     </nav>
     <div class="alert alert-info alert-dismissible fade show" role="alert">
         <strong>Bienvenido a esta web</strong>
@@ -72,9 +77,88 @@
         </nav>
     </div>
     <div class="fondo"></div>
-    <main class="container my-3">
+    <main data-bs-spy="scroll" class="container my-3">
         <article id="bootstrap" class="row my-5">
             <h2 class="border rounded shadow p-2 text-center">Bootstrap</h2>
+
+            <section id="tabs">
+                <h3>Tabs</h3>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                            aria-selected="false">Contact</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                            data-bs-target="#disabled-tab-pane" type="button" role="tab"
+                            aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+                        <p class="lead">Home</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis ipsum adipisci
+                            praesentium magni exercitationem, sapiente odio repellendus aspernatur amet voluptates
+                            nihil. Dolorum quas quia, obcaecati qui explicabo magni optio.</p>
+                        <p>Eaque dolore distinctio pariatur vitae alias eius incidunt voluptatibus, voluptas dignissimos
+                            sequi labore dolorem blanditiis obcaecati eveniet ipsum repellat, suscipit quae tempora
+                            repudiandae illum hic ullam impedit quas? Quis, illum!</p>
+                        <p>Voluptate, optio harum. Ipsam adipisci in sint corrupti similique, exercitationem nihil
+                            nostrum impedit? Non, modi, sit repellendus aspernatur adipisci officia explicabo corporis
+                            autem ad vitae aperiam, deserunt tempore dignissimos natus.</p>
+                        <p>Necessitatibus tenetur culpa a modi perferendis animi voluptates iste cumque tempore maxime,
+                            cupiditate consequatur libero esse reprehenderit consequuntur, error suscipit fugit vel
+                            praesentium quo. Blanditiis obcaecati nulla exercitationem laudantium? Maxime?</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <p class="lead">Profile</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quisquam, quam magni sed
+                            sapiente numquam, eos maxime corporis iste accusantium minima asperiores possimus deleniti
+                            laudantium, iure id. Cum, tenetur quibusdam.</p>
+                        <p>Ex, deserunt iure, ullam laudantium expedita incidunt laborum, accusantium dolore obcaecati
+                            nihil facere! Fugit accusantium corporis animi iure exercitationem placeat! Incidunt
+                            blanditiis ad beatae voluptatem, repudiandae omnis dolore perferendis magnam!</p>
+                        <p>Similique mollitia cumque sint labore tempore earum. Alias iure veritatis aliquid ipsam,
+                            facere adipisci, ab saepe voluptate ipsum suscipit nemo, vitae at cum reiciendis incidunt
+                            harum totam id deserunt exercitationem!</p>
+                        <p>Voluptatum quaerat expedita ducimus, nemo cupiditate, deleniti ratione odio architecto optio
+                            tempore ipsam omnis quisquam sunt corrupti enim iste quod est iusto ab facilis minus
+                            sapiente accusamus! Labore, mollitia officia!</p>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">
+                        <p class="lead">Contact</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt nisi vel cum est officia.
+                            Fugiat amet error autem reprehenderit harum, magni nobis consectetur ad fuga in accusamus
+                            dolorum deleniti! Nemo.</p>
+                        <p>Natus, repudiandae, asperiores recusandae rem voluptas illum illo, ab ratione incidunt a
+                            optio aperiam mollitia quo ipsum esse totam eum et aliquam itaque! Sunt quia commodi aliquam
+                            minima vero ut.</p>
+                        <p>Fuga, id beatae minima iste ea provident atque nesciunt animi inventore doloribus deserunt
+                            quibusdam rerum? Vitae, eveniet. Molestiae inventore unde dolor magnam obcaecati laboriosam
+                            officiis aliquid. Veniam quas consequuntur eligendi!</p>
+                        <p>Quod nemo exercitationem odio qui. Nesciunt corporis dolorum nihil veniam commodi libero,
+                            eligendi, mollitia quis aperiam provident voluptas reprehenderit. Amet ab maxime debitis et
+                            quod tenetur fugiat id nemo quam.</p>
+                    </div>
+                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                        tabindex="0">...</div>
+                </div>
+            </section>
 
             <section id="cards">
                 <h3>Cards</h3>
@@ -87,6 +171,7 @@
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
+                                <a href="#" class="btn btn-primary stretched-link">COMPRAR</a>
                             </div>
                             <div class="card-footer">
                                 <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -280,8 +365,8 @@ public class HolaMundo {
                         <img class="border rounded shadow img-fluid my-3" src="imgs/flores.jpg" alt="Flores">
                     </a>
 
-                    <audio class="order-lg-first border rounded-5 shadow w-100 my-3" src="audios/musica.mp3"
-                        controls></audio>
+                    <audio class="d-print-none order-lg-first border rounded-5 shadow w-100 my-3"
+                        src="audios/musica.mp3" controls></audio>
 
                     <video class="col-lg-6 border rounded shadow my-3 p-0" src="videos/pelicula.mp4" controls></video>
 
@@ -290,7 +375,7 @@ public class HolaMundo {
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.762082154642!2d-2.916172288838435!3d43.25640787788421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fb46238d865%3A0xb671edfb1120ab06!2sIpartek%20Servicios%20Inform%C3%A1ticos!5e0!3m2!1ses!2ses!4v1688661088299!5m2!1ses!2ses"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div id="spotify" class="border rounded-4 shadow my-3 ratio ratio-4x3">
+                    <div id="spotify" class="d-print-none border rounded-4 shadow my-3 ratio ratio-4x3">
                         <iframe
                             src="https://open.spotify.com/embed/artist/0Wr0oT0aCD6w7O25TPwnoX?utm_source=generator&theme=0"
                             allowfullscreen=""
@@ -376,7 +461,7 @@ public class HolaMundo {
 
                                 <textarea class="form-control" placeholder="Dinos qué opinas de esto"></textarea>
                             </fieldset>
-                            <fieldset class="col-md-6">
+                            <fieldset class="d-print-none col-md-6">
                                 <legend>Mandar el formulario</legend>
 
                                 <input class="btn btn-primary" type="submit" value="Enviar">
